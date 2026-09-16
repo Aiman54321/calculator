@@ -1,51 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Calculator</h1>
-    <div class="AGC">
-        <div class="A1">
-        <input type="text" maxlength="15" id="Gani">
-        </div>
-        <div class="A2">
-            <div>
-                <input type="button" class="button" value="C">
-                <input type="button" class="button" value="()">
-                <input type="button" class="button" value="%">
-                <input type="button" class="button" value="/">
-            </div>
-            <div>
-                <input type="button" class="button" value="7">
-                <input type="button" class="button" value="8">
-                <input type="button" class="button" value="9">
-                <input type="button" class="button" value="x">
-            </div>
-            <div>
-                <input type="button" class="button" value="4">
-                <input type="button" class="button" value="5">
-                <input type="button" class="button" value="6">
-                <input type="button" class="button" value="-">
-            </div>
-            <div>
-                <input type="button" class="button" value="1">
-                <input type="button" class="button" value="2">
-                <input type="button" class="button" value="3">
-                <input type="button" class="button" value="+">
-            </div>
-            <div class="A3">
-                <input type="button" class="button" value="+/-">
-                <input type="button" class="button" value="0">
-                <input type="button" class="button" value=".">
-                <input type="button" class="button" value="=">
-            </div>
-            
-        </div>
-        
-    </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="calculator" aria-label="Calculator">
+      <div id="display" class="display" aria-live="polite">0</div>
+
+      <div class="button-grid" aria-label="Calculator buttons">
+        <button type="button" class="btn action" data-action="clear">C</button>
+        <button type="button" class="btn action" data-action="delete">DEL</button>
+        <button type="button" class="btn operator" data-value="/">÷</button>
+        <button type="button" class="btn operator" data-value="*">×</button>
+
+        <button type="button" class="btn number" data-value="7">7</button>
+        <button type="button" class="btn number" data-value="8">8</button>
+        <button type="button" class="btn number" data-value="9">9</button>
+        <button type="button" class="btn operator" data-value="-">−</button>
+
+        <button type="button" class="btn number" data-value="4">4</button>
+        <button type="button" class="btn number" data-value="5">5</button>
+        <button type="button" class="btn number" data-value="6">6</button>
+        <button type="button" class="btn operator" data-value="+">+</button>
+
+        <button type="button" class="btn number" data-value="1">1</button>
+        <button type="button" class="btn number" data-value="2">2</button>
+        <button type="button" class="btn number" data-value="3">3</button>
+        <button type="button" class="btn operator equals" data-action="equals">=</button>
+
+        <button type="button" class="btn number zero" data-value="0">0</button>
+        <button type="button" class="btn number" data-value=".">.</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
